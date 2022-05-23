@@ -22,9 +22,9 @@ function App() {
       ))}
 
       <hr />
-      <button onClick={() => inc()}>Add 1</button>
+      <button onClick={() => inc(1)}>Add 1</button>
       <button onClick={() => inc(3)}>Add 3</button>
-      <button onClick={() => dec()}>Sub 1</button>
+      <button onClick={() => dec(1)}>Sub 1</button>
       <button onClick={() => dec(4)}>Sub 4</button>
       <button onClick={() => set(100)}>Set counter to 100</button>
       <h3>Value: {value}</h3>
