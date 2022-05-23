@@ -4,7 +4,7 @@ import { useCounter } from "./hooks/useCounter";
 
 function App() {
   // Entire thing bellow should work. you don't have to edit this file, only implement  hooks
-  const [list, { push, pop, clear, reset, map }] = useList([1, 2, 3]);
+  const [list, { push, pop, clear, reset, map }]:any = useList([1, 2, 3]);
 
   const { value, inc, dec, set } = useCounter(10);
 

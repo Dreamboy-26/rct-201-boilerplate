@@ -24,5 +24,11 @@ export const useList = (arr:any) => {
         setList([])
     }
 
-    return {push,pop,clear,reset}
+    const map=(num:Function)=>{
+
+        let data=list.map(num);
+        setList(data)
+    }
+
+    return {list,push,pop,clear,reset,map}
 };
