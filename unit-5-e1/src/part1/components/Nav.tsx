@@ -1,3 +1,5 @@
+import Link from "react"
+
 function Nav() {
   return (
     <div className="nav">
@@ -10,7 +12,7 @@ function Nav() {
       <div className="navCartStatus">
         Cart:{" "}
         <span className="navCartCount">{/* total items in cart here */}</span>
-        <button className="navCartCheckout">Checkout</button>
+        <button className="navCartCheckout" > <Link to={"/checkout"}>Checkout</Link> </button>
         {/* on this button click user goes to checkout page */}
       </div>
     </div>

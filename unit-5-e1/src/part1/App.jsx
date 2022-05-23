@@ -2,7 +2,7 @@ import { Nav } from "./components/Nav";
 import { CardDetails } from "./components/CardDetails";
 import { Checkout } from "./components/Checkout";
 import { Body } from "./components/Body";
-
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">

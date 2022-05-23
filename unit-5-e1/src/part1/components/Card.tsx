@@ -1,3 +1,5 @@
+import Link from "react"
+
 function Card({ d }) {
   return (
     <div className="item">
