@@ -1,8 +1,8 @@
 import { useState } from "react";
-
+import React from "react";
 export const useList = (arr:any) => {
     
-    const [list,setList]=useState(arr)
+    const [list,setList]=React.useState(arr)
 
 
     const push=(num:number)=>{
@@ -30,5 +30,6 @@ export const useList = (arr:any) => {
         setList(data)
     }
 
-    return {list,push,pop,clear,reset,map}
+    let check={push,pop,clear,reset,map}
+    return {list,check}
 };
